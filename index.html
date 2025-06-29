@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style1.css">
+        <script src="https://kit.fontawesome.com/223e90000c.js" crossorigin="anonymous"></script>
+        <title>Personal Porfolio</title> 
+    </head>
+    <body>
+        <!-- Semi-transparent navbar -->
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <nav>
+                    <a href="#" class="logo"><span style="color:#39FF14  ;">R</span>ugved.</span></a>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+
+        <div id="header">
+            <div class="container">
+                <div class="header-text">
+                    <p>Full Stack Developer & Cloud Enthusiast</p>
+                    <h1>Hi, I'm <span class="highlight">Rugved</span></h1>
+                    <p class="tagline">Building robust web solutions with a passion for cybersecurity</p>
+                </div>
+            </div>
+        </div>
+
+<!---------about--------->
+<div id="about"></div>
+    <div class="container">
+         <div class="row">
+             <div class="about-col-1">
+                 <img src="images/user.jpeg" >
+                </div>
+             <div class="about-col-2"> 
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Rugved - a full-time engineering student at Symbiosis 
+                    Skills and Professional University and an avid fitness 
+                    enthusiast. Currently, I am steadily diving deeper into full
+                    stack development and sharpening my skills. I am also quite 
+                    interested in cybersecurity, learning how systems stay secure
+                    and robust in the face of modern threats. I have hands-on 
+                    experience with Microsoft Azure, including deploying virtual 
+                    machines, managing storage, and working with cloud-based 
+                    databases. I'm also comfortable with core web technologies like 
+                    HTML, CSS and Javascript and am actively working towards backend
+                    logic with C++.
+                    
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>2025 June - Current</span><br>Web Development Internship at ShadowFox</li>
+                        <li><span>2024 June - 2024 August</span><br>Internship at Yhills</li>
+                        <p class="experience-details">
+                            <ul class="dash-list">
+                                <li> Gained hands-on experience with Azure services</li>
+                                <li> Created an Azure SQL Database and visualized data</li>
+                                <li> Focused on cloud security throughout the project</li>
+                             </ul>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 August - Current</span><br>B.Tech at Symbiosis Skills and Professional University </li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <!---------services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div class="skill-row">
+                    <div class="skill-box">HTML</div>
+                    <div class="skill-box">CSS</div>
+                    <div class="skill-box">JavaScript</div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">C/C++</div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-box">Critical Thinking</div>
+                    <div class="skill-box">Microsoft Azure</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------certificates---------------->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="certificates-list">
+                <div class="certificate-item">
+                    <div class="certificate-image">
+                        <img src="images/fullstack.jpg" alt="Udemy - The Complete Full-Stack Web Development Bootcamp">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>The Complete Full-Stack Web Development Bootcamp</h3>
+                        <p class="certificate-issuer">Issued by: Udemy</p>
+                        <p class="certificate-description">This certificate was awarded for demonstrating proficiency in web development fundamentals, including HTML, CSS, and JavaScript. The course covered responsive design principles and modern web development practices.</p>
+                        <p class="certificate-date">Issued: March 2025</p>
+                    </div>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-image">
+                        <img src="images/Dronashield.jpg" alt="Participated in Cyber Forensics Workshop">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Participated in Cyber Forensics Workshop</h3>
+                        <p class="certificate-issuer">Issued by: DronaShield Cyber Forensics Pvt.</p>
+                        <p class="certificate-description">This certification validates skills in fundamental cyber forensics concepts, practical investigation workflows, and real-world application of digital evidence analysis techniques</p>
+                        <p class="certificate-date">Issued: April 2025</p>
+                    </div>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-image">
+                        <img src="images/Python.jpg" alt="Certificate 3">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Python for Beginners</h3>
+                        <p class="certificate-issuer">Issued by: Cisco Networking Academy</p>
+                        <p class="certificate-description">Gained skills in designing, developing, and improving computer programs, analyzing problems using programming logic, and following programming best practices. PCEP – Certified Entry-Level Python Programmer certification.</p>
+                        <p class="certificate-date">Issued: March 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------contact me---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me!</h1>
+                    <p><i class="fa-solid fa-envelope" style="color: #39FF14;"></i> rugvedbidwai@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: #39FF14;"></i> 8459225738</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rugved-bidwai"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ray2616"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" class="btn">Download Resume</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text"  name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5"   placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id = "msg" style="color: #39FF14; margin-top: 15px; display: block;"></span>
+                </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rugved Bidwai. All rights Reserved.</p>
+        </div>
+    </div>
+ 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0"; 
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyoLPYkCPO9lYsdMyGRDlyaEsZ6Ib2gZDKZdcN93PmbcaCfjRR96aeXeurkxuJjhsVjfQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
